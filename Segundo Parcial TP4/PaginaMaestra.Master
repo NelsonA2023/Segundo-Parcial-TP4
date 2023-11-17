@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="Segundo_Parcial_TP4.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="foot.css" rel="stylesheet" />
+    <link href="nav.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div>
+             <div class="container">
+               <nav>
+                   <asp:HyperLink ID="HyperLink1" runat="server" Registro="~/Registro.aspx" NavigateUrl="~/Registro.aspx">Registro</asp:HyperLink><br />
+                   <asp:HyperLink ID="HyperLink2" runat="server" Archivos="~/Archivos.aspx" NavigateUrl="~/Archivos.aspx">Archivos</asp:HyperLink>
+               </nav>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer">
+                <h4> TP4 Parcial 2</h4>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
